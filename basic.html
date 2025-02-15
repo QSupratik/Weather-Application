@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <div class="card">
+
+        <div class="searchbox">
+            <input type="text" placeholder="Enter the city name"> 
+            <button> 
+                <img src="./Images/search_img.jpg" id="search_icon" alt="search icon">
+            </button>
+        </div>
+
+        <div class="error"> 
+            <p> Invalid Location Name </p>
+        </div>
+
+        <div class="temperature">
+            <h1 id="city"> </h1>
+            <img class="temperature_image" src="./Images/temperature2_img.jpg" alt="Temperature Image">
+            <h1 id="temperature_data"> </h1>
+        </div>
+        
+        <div class="weather">
+
+            <div class="humidity">
+                <h1>Humidity</h1>
+                <img class="weather_image" src="./Images/humidity.png" alt="Humidity ImageS">
+                <h1 id="humidity_data"> </h1>
+            </div>
+
+            <div class="windspeed">
+                <h1>Windspeed</h1>
+                <img class="weather_image" src="./Images/wind.png" alt="Wind Speed Image">
+                <h1 id="windspeed_data"> </h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
