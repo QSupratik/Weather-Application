@@ -4,7 +4,7 @@ const searchButton = document.querySelector(".searchbox button");
 
 
 async function getWeather( city ){
-    const apiKey = "7546e7b08aeb566c114e6780087edd1c";
+    const apiKey = process.env.APP_WEATHER_API_KEY;
     const latlonURL = "https://api.openweathermap.org/geo/1.0/direct?limit=1&q=";
 
     const latlon = await fetch(latlonURL + city + `,india&appid=${apiKey}`);
